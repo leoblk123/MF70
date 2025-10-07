@@ -349,13 +349,16 @@
                     </div>
                     <div class="video-grid">
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/guejkKnPG-Y" allowfullscreen></iframe>
+                            <!-- FIX: Added ?mute=1 to mute the video by default -->
+                            <iframe src="https://www.youtube.com/embed/guejkKnPG-Y?mute=1" allowfullscreen></iframe>
                         </div>
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/fSZB2R8fw7M" allowfullscreen></iframe>
+                            <!-- FIX: Added ?mute=1 to mute the video by default -->
+                            <iframe src="https://www.youtube.com/embed/fSZB2R8fw7M?mute=1" allowfullscreen></iframe>
                         </div>
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/ojZkuykA6Ro" allowfullscreen></iframe>
+                            <!-- FIX: Added ?mute=1 to mute the video by default -->
+                            <iframe src="https://www.youtube.com/embed/ojZkuykA6Ro?mute=1" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -373,7 +376,7 @@
                         I avoided thrust bearings due to their axial preload requirements. With PETG's susceptibility to creep under sustained loads, thrust bearings would gradually lose preload and introduce backlash over time. Instead, I engineered a dual ball bearing system with a precision spacer, preloaded using lock nuts. The entire bearing block clamps to the motor mount via a shell design that distributes loads across a large contact area, preventing localized deformation.
                     </p>
                     <div class="media-container">
-                        <img src="images/Bearing_block.jpg" alt="Bearing block assembly showing lock nuts, bearings, washers and spacers mounted on T8 leadscrew">
+                        <img src="Bearing_block.jpg" alt="Bearing block assembly showing lock nuts, bearings, washers and spacers mounted on T8 leadscrew">
                     </div>
                 </div>
             </div>
@@ -386,7 +389,7 @@
                         The complete bearing block assembly mounted to the motor mount demonstrates how each component works synergistically to eliminate backlash while maintaining precision positioning throughout the machine's travel range.
                     </p>
                     <div class="media-container">
-                        <img src="images/Bearing_block_assembly.jpg" alt="Complete bearing block assembly integrated with motor mount">
+                        <img src="Bearing_block_assembly.jpg" alt="Complete bearing block assembly integrated with motor mount">
                     </div>
                 </div>
             </div>
@@ -399,7 +402,7 @@
                         Every component remains easily accessible for inspection and maintenance. Since the machine will primarily cut aluminum with moderate cutting forces, structural deflection under load is negligible compared to the original Proxxon MF70—despite using partially 3D printed components. The steel-reinforced composite structure provides excellent rigidity where needed.
                     </p>
                     <div class="media-container">
-                        <img src="images/stepper_motor_mount.jpg" alt="Y-axis assembly showing motor mount, bearing block, leadscrew, anti-backlash nut, carbon fiber bracket, and Proxxon sliding carriage">
+                        <img src="stepper_motor_mount.jpg" alt="Y-axis assembly showing motor mount, bearing block, leadscrew, anti-backlash nut, carbon fiber bracket, and Proxxon sliding carriage">
                     </div>
                 </div>
             </div>
@@ -412,7 +415,8 @@
                         Proper alignment is critical given the rigid bearing block design. Misalignment would accelerate wear and require frequent maintenance. This video demonstrates alignment verification using a 2µm resolution dial test indicator on the leadscrews, confirming proper assembly before final installation.
                     </p>
                     <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/UBrc1NJcRGE" allowfullscreen></iframe>
+                        <!-- FIX: Added ?mute=1 to mute the video by default -->
+                        <iframe src="https://www.youtube.com/embed/UBrc1NJcRGE?mute=1" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -426,10 +430,12 @@
                     </p>
                     <div class="video-grid">
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/f_nb1bv27bM" allowfullscreen></iframe>
+                            <!-- FIX: Added ?mute=1 to mute the video by default -->
+                            <iframe src="https://www.youtube.com/embed/f_nb1bv27bM?mute=1" allowfullscreen></iframe>
                         </div>
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/a5LgRG-lEYc" allowfullscreen></iframe>
+                            <!-- FIX: Added ?mute=1 to mute the video by default -->
+                            <iframe src="https://www.youtube.com/embed/a5LgRG-lEYc?mute=1" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -443,7 +449,7 @@
                         The spindle motor upgrade replaces the original with a BLDC (brushless DC) motor offering superior torque characteristics and significantly higher RPM capability. This provides better reliability, substantially quieter operation, and costs less than an 800W brushed motor from typical suppliers—even including the motor controller electronics. The 60mm cooling fan ensures thermal management during extended machining operations.
                     </p>
                     <div class="media-container">
-                        <img src="images/BLDC.jpg" alt="BLDC motor installed on Proxxon spindle head with 60mm cooling fan, shown without protective cover">
+                        <img src="BLDC.jpg" alt="BLDC motor installed on Proxxon spindle head with 60mm cooling fan, shown without protective cover">
                     </div>
                 </div>
             </div>
@@ -456,7 +462,7 @@
                         The completed BLDC motor assembly with its 3D printed protective cover and integrated cooling fan. The cover shields the motor from debris while maintaining efficient airflow for heat dissipation during operation.
                     </p>
                     <div class="media-container">
-                        <img src="images/BLDC_cover.jpg" alt="Complete BLDC motor assembly with protective cover and cooling fan installed">
+                        <img src="BLDC_cover.jpg" alt="Complete BLDC motor assembly with protective cover and cooling fan installed">
                     </div>
                 </div>
             </div>
@@ -471,8 +477,8 @@
                         To validate my FEA simulations, I employed Claude Opus 4.1 to perform order-of-magnitude calculations for expected deformations under a 100N cutting force. This AI-assisted approach is significantly faster and more accurate than manual calculations—a remarkable evolution from traditional engineering education methods. The AI predictions aligned closely with the FreeCAD FEA results, confirming proper model setup, meshing parameters, and material properties.
                     </p>
                     <div class="media-container">
-                        <img src="images/X_axis_force_calc.jpg" alt="Claude Opus 4.1 analytical calculation showing estimated deformation from 100N cutting force on X-axis">
-                        <img src="images/X_axis_force_sim.jpg" alt="FreeCAD FEA simulation results for 100N cutting force on X-axis, validating AI-predicted deformation magnitude">
+                        <img src="X_axis_force_calc.jpg" alt="Claude Opus 4.1 analytical calculation showing estimated deformation from 100N cutting force on X-axis">
+                        <img src="X_axis_force_sim.jpg" alt="FreeCAD FEA simulation results for 100N cutting force on X-axis, validating AI-predicted deformation magnitude">
                     </div>
                 </div>
             </div>
@@ -549,31 +555,31 @@
                 La contrainte unique : toutes les modifications doivent être réalisées sans accès à une autre fraiseuse. Mes outils disponibles se limitent à des imprimantes 3D FDM et résine, plus une perceuse à colonne. De plus, l'ensemble de la construction doit rester économique.
                 <br><br>
                 Construire une CNC à partir de zéro en utilisant des vis à billes et des rails linéaires dépasserait mon budget et mes capacités. Je modifie donc stratégiquement la plateforme Proxxon existante avec des solutions soigneusement conçues.`,
-                achievement1Title: "Diagnostic du Faux-Rond Critique de la Broche",
+                achievement1Title: "Étape 1 : Diagnostic du Faux-Rond Critique de la Broche",
                 achievement1Text: `Mon premier défi concernait la mise à niveau de la broche. Après l'installation d'un adaptateur de broche USOVO ER11, des mesures de précision avec un comparateur à cadran ont révélé un faux-rond inacceptable sur les fraises montées. Une investigation systématique a identifié le cône interne comme coupable, présentant un alarmant 28µm de Lecture Totale d'Indicateur (TIR). Pour l'usinage de précision, ce niveau de faux-rond rend pratiquement impossible l'obtention de tolérances serrées.`,
-                achievement1Quote: `Comme Michel Uphoff l'a justement observé dans sa vidéo sur une autre machine Proxxon : "...on se demande si la seule chose vraiment conçue avec précision en Allemagne était la facture."`,
-                achievement2Title: "Conception du Système de Réduction du Jeu",
+                achievement1Quote: `As Michel Uphoff aptly observed in his video about another Proxxon machine: "...makes you wonder if the only thing truly precision engineered in Germany was the invoice."`,
+                achievement2Title: "Étape 2 : Conception du Système de Réduction du Jeu",
                 achievement2Text: `L'élimination du jeu a nécessité une analyse d'ingénierie approfondie. À l'aide de simulations FEA, j'ai validé une approche hybride : des supports moteur en PETG imprimés en 3D pour un positionnement précis, renforcés par des plaques d'acier collées pour créer une structure composite acier-plastique. Cette conception minimise la déformation sous les charges de coupe tout en restant fabricable avec les outils disponibles.
                 <br><br>
                 Le système maintient des moteurs pas à pas NEMA 23 et des blocs de roulement personnalisés supportant des vis mères ACME T8 avec des écrous anti-jeu. Essentiel à l'utilisation à long terme, chaque composant est conçu pour un accès et une maintenance faciles—pas besoin de démonter toute la machine pour ajuster une seule fixation.
                 <br><br>
                 J'ai évité les roulements de butée en raison de leurs exigences de précharge axiale. Avec la susceptibilité du PETG au fluage sous charges soutenues, les roulements de butée perdraient progressivement leur précharge et introduiraient du jeu avec le temps. J'ai plutôt conçu un système à double roulement à billes avec une entretoise de précision, préchargé à l'aide d'écrous de blocage. L'ensemble du bloc de roulement se fixe au support moteur via une conception en coque qui distribue les charges sur une grande surface de contact, empêchant la déformation localisée.`,
-                achievement3Title: "Assemblage Intégré du Bloc de Roulement",
+                achievement3Title: "Étape 3 : Assemblage Intégré du Bloc de Roulement",
                 achievement3Text: `L'assemblage complet du bloc de roulement monté sur le support moteur démontre comment chaque composant fonctionne en synergie pour éliminer le jeu tout en maintenant un positionnement de précision sur toute la course de la machine.`,
-                achievement4Title: "Conception Axée sur la Maintenabilité",
+                achievement4Title: "Étape 4 : Conception Axée sur la Maintenabilité",
                 achievement4Text: `Chaque composant reste facilement accessible pour l'inspection et la maintenance. Étant donné que la machine coupera principalement de l'aluminium avec des forces de coupe modérées, la déflexion structurelle sous charge est négligeable par rapport au Proxxon MF70 d'origine—malgré l'utilisation de composants partiellement imprimés en 3D. La structure composite renforcée d'acier offre une excellente rigidité là où c'est nécessaire.`,
-                achievement5Title: "Vérification de l'Alignement de Précision",
+                achievement5Title: "Étape 5 : Vérification de l'Alignement de Précision",
                 achievement5Text: `Un alignement approprié est critique compte tenu de la conception rigide du bloc de roulement. Un mauvais alignement accélérerait l'usure et nécessiterait une maintenance fréquente. Cette vidéo démontre la vérification de l'alignement à l'aide d'un comparateur à cadran de résolution 2µm sur les vis mères, confirmant un assemblage correct avant l'installation finale.`,
-                achievement6Title: "Résultats de Performance du Jeu",
-                achievement6Text: `Les résultats parlent d'eux-mêmes : le jeu a été réduit à environ 10µm—potentiellement encore moins. Les mesures finales avec les moteurs NEMA installés et en utilisant le comparateur de 2µm fourniront des valeurs exactes. Ces vidéos démontrent l'amélioration spectaculaire entre le Proxxon MF70 d'origine et la version modifiée.`,
-                achievement7Title: "Mise à Niveau du Moteur Brushless",
+                achievement6Title: "Étape 6 : Résultats de Performance du Jeu",
+                achievement6Text: `The results speak for themselves: backlash has been reduced to approximately 10µm—potentially even less. Final measurements with the NEMA motors installed and using the 2µm DTI will provide exact values. These videos demonstrate the dramatic improvement between the stock Proxxon MF70 and the modified version.`,
+                achievement7Title: "Étape 7 : Mise à Niveau du Moteur Brushless",
                 achievement7Text: `La mise à niveau du moteur de broche remplace l'original par un moteur BLDC (brushless DC) offrant des caractéristiques de couple supérieures et une capacité RPM nettement plus élevée. Cela procure une meilleure fiabilité, un fonctionnement considérablement plus silencieux, et coûte moins cher qu'un moteur à balais de 800W des fournisseurs typiques—même en incluant l'électronique du contrôleur moteur. Le ventilateur de 60mm assure la gestion thermique pendant les opérations d'usinage prolongées.`,
-                achievement8Title: "Système de Protection du Moteur",
+                achievement8Title: "Étape 8 : Système de Protection du Moteur",
                 achievement8Text: `L'assemblage complet du moteur BLDC avec son couvercle de protection imprimé en 3D et son ventilateur de refroidissement intégré. Le couvercle protège le moteur des débris tout en maintenant un flux d'air efficace pour la dissipation de chaleur pendant le fonctionnement.`,
-                achievement9Title: "Analyse FEA avec Validation Assistée par IA",
+                achievement9Title: "Étape 9 : Analyse FEA avec Validation Assistée par IA",
                 achievement9Text: `La prochaine phase implique l'optimisation de la rigidité structurelle et de l'amortissement. Le plan comprend le remplissage des cavités avec un composite époxy-sable de quartz pour l'amortissement des vibrations et une rigidité accrue, plus un renforcement stratégique utilisant des barres d'acier sur les surfaces extérieures de la colonne et des supports moteur.
                 <br><br>
-                Pour valider mes simulations FEA, j'ai employé Claude Opus 4.1 pour effectuer des calculs d'ordre de grandeur pour les déformations attendues sous une force de coupe de 100N. Cette approche assistée par IA est significativement plus rapide et plus précise que les calculs manuels—une évolution remarquable par rapport aux méthodes d'enseignement d'ingénierie traditionnelles. Les prédictions de l'IA se sont alignées étroitement avec les résultats FEA de FreeCAD, confirmant la configuration appropriée du modèle, les paramètres de maillage et les propriétés des matériaux.`,
+                To validate my FEA simulations, I employed Claude Opus 4.1 to perform order-of-magnitude calculations for expected deformations under a 100N cutting force. This AI-assisted approach is significantly faster and more accurate than manual calculations—a remarkable evolution from traditional engineering education methods. The AI predictions aligned closely with the FreeCAD FEA results, confirming proper model setup, meshing parameters, and material properties.`,
                 remainingTitle: "Modifications à Venir",
                 remainingList: `<li>Sourcer et installer une broche de précision de remplacement</li>
                 <li>Implémenter le renforcement structurel avec des barres d'acier</li>
